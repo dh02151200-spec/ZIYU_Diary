@@ -113,24 +113,17 @@ url("/images/background/star-sky.png") center center / 1600px auto no-repeat;  p
   .decor,
   .decor-rabbit,
   .decor-chichi,
-  .decor-puppy,s
+  .decor-puppy,
   .decor-cat,
   .decor-paperclip {
     opacity: 1 !important;
     filter: none !important;
   }
 
- @media (max-width: 900px) {
-
   .decor-rabbit { width:140px; right:40px; top:0px; }
-
-  .decor-chichi { width:80px; left:60px;  bottom:10px; }
-
+  .decor-chichi { width:80px; left:60px; bottom:10px; }
   .decor-puppy { width:90px; right:40px; top:100px; }
-
   .decor-cat { width:120px; left:20px; bottom:0px; }
-
-}
 }
 
 .hub-shell {
@@ -903,42 +896,46 @@ url("/images/background/star-sky.png") center center / 1600px auto no-repeat;  p
 @media (max-width: 860px) {
   html,
   body {
-    min-height: 50svh;
+    min-height: 100svh;
     overflow-x: hidden;
   }
 
   .site-shell {
-    min-height: 80svh;
+    min-height: 100svh;
     height: auto;
     overflow-x: hidden;
     overflow-y: auto;
     touch-action: pan-y pinch-zoom;
+    padding: 34px 18px 74px;
   }
-  
 
   .hub-shell {
+    width: 100%;
     min-height: 100svh;
-    height: 100svh;
+    height: auto;
     overflow: visible;
-    align-items: center;
+    align-items: flex-start;
+    justify-content: center;
   }
 
   .hub-container,
   .diary-stage {
-    width: 800px !important;
-    height: var(--desk-height) !important;
+    width: 720px !important;
+    height: 1080px !important;
+    max-width: none !important;
   }
 
   .diary-book.mobile-one-page-book {
     display: grid;
     grid-template-columns: 1fr !important;
-    width: 800px !important;
-    height: var(--desk-height) !important;
+    width: 720px !important;
+    height: 1080px !important;
   }
 
   .diary-book.mobile-one-page-book .diary-page {
-    width: 800px !important;
-    height: var(--desk-height) !important;
+    width: 720px !important;
+    height: 1080px !important;
+    padding: 54px 74px 62px;
   }
 
   .mobile-left-page .diary-page-right,
@@ -976,25 +973,27 @@ url("/images/background/star-sky.png") center center / 1600px auto no-repeat;  p
   .mobile-right-page .decor-cat {
     display: none !important;
   }
-  @media (max-width: 900px) {
+
   img.page-sticker:not([src]),
   img.page-sticker[src=""],
   img.page-sticker[src="#"] {
     display: none !important;
   }
-  @media (max-width: 900px) {
+
   .mobile-left-page .sticker-ziyu_bar {
     display: block !important;
-    width: 82% !important;
-    left: 9% !important;
+    width: 76% !important;
+    left: 12% !important;
     right: auto !important;
-    bottom: 36px !important;
+    bottom: 28px !important;
     top: auto !important;
     border-radius: 14px;
     opacity: 1 !important;
-    z-index: 6 !important;
+    z-index: 20 !important;
+    transform: none !important;
   }
-}
-}
 
+  .mobile-right-page .sticker-ziyu_bar {
+    display: none !important;
+  }
 }
