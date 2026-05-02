@@ -71,6 +71,13 @@ button { cursor: pointer; }
   background:
     linear-gradient(rgba(255,255,255,0.04), rgba(255,255,255,0.14)),
 url("/images/background/star-sky.png") center center / 1600px auto no-repeat;  pointer-events: none;
+@media (max-width: 900px) {
+  .photo-background {
+    background:
+      linear-gradient(rgba(255,255,255,0.04), rgba(255,255,255,0.14)),
+      url("/images/background/star-sky.png") center center / 900px auto no-repeat;
+  }
+}
 }
 
 .photo-background::after {
