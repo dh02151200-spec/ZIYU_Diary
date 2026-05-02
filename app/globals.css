@@ -103,10 +103,10 @@ url("/images/background/star-sky.png") center center / 1600px auto no-repeat;  p
 }
 
 /* 주변 장식 이미지 교체 위치: /public/images/decor/ 안의 파일명을 유지하고 이미지만 교체하면 됩니다. */
-.decor-rabbit { width:200px; right:105px; top:120px; transform:rotate(20deg); }
-.decor-chichi { width:90px; right:75px; bottom:145px; transform:rotate(-12deg); }
-.decor-puppy { width:70px; left:150px; top:200px; transform:rotate(8deg); }
-.decor-cat { width:200px; left:45px; bottom:80px; transform:rotate(-18deg); }
+.decor-rabbit { width:230px; right:90px; top:120px; transform:rotate(20deg); }
+.decor-chichi { width:100px; right:75px; bottom:145px; transform:rotate(-12deg); }
+.decor-puppy { width:80px; left:100px; top:200px; transform:rotate(8deg); }
+.decor-cat { width:230x; left:60px; bottom:80px; transform:rotate(-18deg); }
 
 @media (max-width: 900px) {
   .desk-decor,
