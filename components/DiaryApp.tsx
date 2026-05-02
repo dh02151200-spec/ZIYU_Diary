@@ -197,11 +197,11 @@ export default function DiaryApp() {
               <div className="binding-spine" aria-hidden="true" />
 
               <div className="diary-page diary-page-left">
-                <div className="page-paper-grain" />
-
-                <img src="/images/stickers/tape-blue.svg" className="page-sticker tape tape-title" alt="" />
-                <img src="/images/stickers/draw_fish.png" className="page-sticker sticker-draw_fish" alt="" />
-                  <img src="/images/stickers/ziyu_fish.gif" className="page-sticker sticker-ziyu_bar" alt="" />
+                               <div className="page-paper-grain" />
+                <img src="/images/stickers/tape-blue.svg" className="page-sticker tape tape-letters" alt="" />
+                <img src="/images/stickers/heart.svg" className="page-sticker sticker-heart-right" alt="" />
+                <img src="/images/stickers/ziyufamily.png" className="page-sticker sticker-ziyufamily" alt="" />
+  <img src="/images/stickers/ziyu_fish.gif" className="page-sticker sticker-ziyu_bar" alt="" />
 
 
                 <img src="/images/stickers/tape-dot.svg" className="page-sticker tape tape-guide" alt="" />
