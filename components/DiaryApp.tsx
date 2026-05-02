@@ -185,6 +185,8 @@ export default function DiaryApp() {
         <img src="/images/decor/pung_rabbit.png" className="decor decor-rabbit" alt="" />
         <img src="/images/decor/pung_chichi.png" className="decor decor-chichi" alt="" />
         <img src="/images/decor/pung_puppy.png" className="decor decor-puppy" alt="" />
+        <img src="/images/stickers/ziyu_fish.gif" className="page-sticker sticker-ziyu_bar" alt="" />
+
          <img src="/images/decor/pung_cat.png" className="decor decor-cat" alt="" /> 
        
       </div>
@@ -202,7 +204,6 @@ export default function DiaryApp() {
                 <img src="/images/stickers/tape-blue.svg" className="page-sticker tape tape-title" alt="" />
                 <img src="/images/stickers/draw_fish.png" className="page-sticker sticker-draw_fish" alt="" />
           
-                  <img src="/images/stickers/ziyu_fish.gif" className="page-sticker sticker-ziyu_bar" alt="" />
 
                 <img src="/images/stickers/tape-dot.svg" className="page-sticker tape tape-guide" alt="" />
 
