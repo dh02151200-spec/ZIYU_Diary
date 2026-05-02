@@ -893,8 +893,7 @@ url("/images/background/star-sky.png") center center / 1600px auto no-repeat;  p
   display: none;
 }
 
-@media (max-width: 860px) {
-
+@media (max-width: 900px) {
   html,
   body {
     min-height: 100svh;
@@ -907,18 +906,8 @@ url("/images/background/star-sky.png") center center / 1600px auto no-repeat;  p
     overflow-x: hidden;
     overflow-y: auto;
     touch-action: pan-y pinch-zoom;
-
-    /* 👇 여백 추가 */
-    padding-top: 40px;
-    padding-bottom: 60px;
   }
-
-  .hub-container {
-    transform: scale(0.60);
-    transform-origin: top center;
-  }
-
-
+  
 
   .hub-shell {
     min-height: 100svh;
