@@ -124,11 +124,11 @@ url("/images/background/star-sky.png") center center / 1600px auto no-repeat;  p
 
   .decor-rabbit { width:140px; right:40px; top:0px; }
 
-  .decor-chichi { width:80px; left:40px;  bottom:30px; }
+  .decor-chichi { width:80px; left:60px;  bottom:10px; }
 
   .decor-puppy { width:90px; right:40px; top:100px; }
 
-  .decor-cat { width:180px; left:20px; bottom:30px; }
+  .decor-cat { width:120px; left:20px; bottom:0px; }
 
 }
 }
@@ -982,5 +982,19 @@ url("/images/background/star-sky.png") center center / 1600px auto no-repeat;  p
   img.page-sticker[src="#"] {
     display: none !important;
   }
+  @media (max-width: 900px) {
+  .mobile-left-page .sticker-ziyu_bar {
+    display: block !important;
+    width: 82% !important;
+    left: 9% !important;
+    right: auto !important;
+    bottom: 36px !important;
+    top: auto !important;
+    border-radius: 14px;
+    opacity: 1 !important;
+    z-index: 6 !important;
+  }
 }
+}
+
 }
