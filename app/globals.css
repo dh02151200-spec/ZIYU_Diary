@@ -893,10 +893,10 @@ url("/images/background/star-sky.png") center center / 1600px auto no-repeat;  p
   display: none;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 860px) {
   html,
   body {
-    min-height: 100svh;
+    min-height: 80svh;
     overflow-x: hidden;
   }
 
