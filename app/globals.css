@@ -867,11 +867,12 @@ button { cursor: pointer; }
   .decor-tape { width: 86px; left: 2vw; top: 8vh; }
   .decor-paperclip { display: none; }
 
-  .hub-container {
-    width: var(--desk-width);
-    height: var(--desk-height);
-  }
-
+.hub-container {
+  width: var(--desk-width);
+  height: var(--desk-height);
+  transform: scale(0.78);
+  transform-origin: center center;
+}
   .admin-shell { padding: 24px 16px; }
   .admin-card { padding: 20px; border-radius: 24px; }
   .admin-login-row,
