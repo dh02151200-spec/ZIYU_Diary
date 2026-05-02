@@ -870,7 +870,7 @@ button { cursor: pointer; }
 .hub-container {
   width: var(--desk-width);
   height: var(--desk-height);
-  transform: scale(0.75);
+  transform: scale(0.72);
   transform-origin: center center;
 }
   .admin-shell { padding: 24px 16px; }
