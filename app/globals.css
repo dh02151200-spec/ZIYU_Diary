@@ -894,6 +894,7 @@ url("/images/background/star-sky.png") center center / 1600px auto no-repeat;  p
 }
 
 @media (max-width: 900px) {
+
   html,
   body {
     min-height: 100svh;
@@ -906,7 +907,18 @@ url("/images/background/star-sky.png") center center / 1600px auto no-repeat;  p
     overflow-x: hidden;
     overflow-y: auto;
     touch-action: pan-y pinch-zoom;
+
+    /* 👇 여백 추가 */
+    padding-top: 40px;
+    padding-bottom: 60px;
   }
+
+  .hub-container {
+    transform: scale(0.85);
+    transform-origin: top center;
+  }
+
+
 
   .hub-shell {
     min-height: 100svh;
@@ -968,4 +980,11 @@ url("/images/background/star-sky.png") center center / 1600px auto no-repeat;  p
   .mobile-right-page .decor-cat {
     display: none !important;
   }
+  @media (max-width: 900px) {
+  img.page-sticker:not([src]),
+  img.page-sticker[src=""],
+  img.page-sticker[src="#"] {
+    display: none !important;
+  }
+}
 }

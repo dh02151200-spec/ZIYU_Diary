@@ -202,6 +202,8 @@ export default function DiaryApp() {
                 <img src="/images/stickers/tape-blue.svg" className="page-sticker tape tape-title" alt="" />
                 <img src="/images/stickers/draw_fish.png" className="page-sticker sticker-draw_fish" alt="" />
                 <img src="/images/stickers/flower.svg" className="page-sticker sticker-flower-left" alt="" />
+                  <img src="/images/stickers/ziyu_fish.gif" className="page-sticker sticker-ziyu_bar" alt="" />
+
                 <img src="/images/stickers/tape-dot.svg" className="page-sticker tape tape-guide" alt="" />
 
                 <div className="left-page-header">
@@ -290,7 +292,6 @@ export default function DiaryApp() {
                 <img src="/images/stickers/tape-blue.svg" className="page-sticker tape tape-letters" alt="" />
                 <img src="/images/stickers/heart.svg" className="page-sticker sticker-heart-right" alt="" />
                 <img src="/images/stickers/ziyufamily.png" className="page-sticker sticker-ziyufamily" alt="" />
-  <img src="/images/stickers/ziyu_fish.gif" className="page-sticker sticker-ziyu_bar" alt="" />
                 <div className="right-page-header">
                   <div>
                     <p className="eyebrow">{COPY.lettersTitle}</p>
