@@ -883,3 +883,89 @@ url("/images/background/star-sky.png") center center / 1600px auto no-repeat;  p
   .admin-login-row,
   .admin-actions { flex-wrap: wrap; }
 }
+
+
+/* =========================
+   모바일 전용: 한쪽 페이지 보기 / 페이지별 데코 분기
+   PC 레이아웃에는 적용되지 않습니다.
+========================= */
+.mobile-left-next {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  html,
+  body {
+    min-height: 100svh;
+    overflow-x: hidden;
+  }
+
+  .site-shell {
+    min-height: 100svh;
+    height: auto;
+    overflow-x: hidden;
+    overflow-y: auto;
+    touch-action: pan-y pinch-zoom;
+  }
+
+  .hub-shell {
+    min-height: 100svh;
+    height: 100svh;
+    overflow: visible;
+    align-items: center;
+  }
+
+  .hub-container,
+  .diary-stage {
+    width: 800px !important;
+    height: var(--desk-height) !important;
+  }
+
+  .diary-book.mobile-one-page-book {
+    display: grid;
+    grid-template-columns: 1fr !important;
+    width: 800px !important;
+    height: var(--desk-height) !important;
+  }
+
+  .diary-book.mobile-one-page-book .diary-page {
+    width: 800px !important;
+    height: var(--desk-height) !important;
+  }
+
+  .mobile-left-page .diary-page-right,
+  .mobile-right-page .diary-page-left {
+    display: none !important;
+  }
+
+  .mobile-left-page .binding-spine,
+  .mobile-right-page .binding-spine,
+  .mobile-left-page .page-flip-sheet,
+  .mobile-right-page .page-flip-sheet {
+    display: none !important;
+  }
+
+  .mobile-left-page .mobile-left-next {
+    display: block !important;
+  }
+
+  .mobile-left-page .decor-puppy,
+  .mobile-left-page .decor-cat {
+    display: block !important;
+  }
+
+  .mobile-left-page .decor-rabbit,
+  .mobile-left-page .decor-chichi {
+    display: none !important;
+  }
+
+  .mobile-right-page .decor-rabbit,
+  .mobile-right-page .decor-chichi {
+    display: block !important;
+  }
+
+  .mobile-right-page .decor-puppy,
+  .mobile-right-page .decor-cat {
+    display: none !important;
+  }
+}

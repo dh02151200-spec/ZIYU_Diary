@@ -32,15 +32,16 @@ export default function DiaryApp() {
   const [nickname, setNickname] = useState("");
   const [content, setContent] = useState("");
   const [openLetter, setOpenLetter] = useState<PublicLetter | null>(null);
+  const [mobilePage, setMobilePage] = useState<"left" | "right">("left");
 
   useEffect(() => {
     function setDiaryScale() {
       const root = document.documentElement;
-      const baseWidth = 1600;
-      const baseHeight = 1200;
       const isNarrow = window.innerWidth <= 900;
-      const safeWidth = window.innerWidth - (isNarrow ? 24 : 48);
-      const safeHeight = window.innerHeight - (isNarrow ? 36 : 48);
+      const baseWidth = isNarrow ? 800 : 1600;
+      const baseHeight = 1200;
+      const safeWidth = window.innerWidth - (isNarrow ? 20 : 48);
+      const safeHeight = window.innerHeight - (isNarrow ? 24 : 48);
       const scale = Math.min(safeWidth / baseWidth, safeHeight / baseHeight, 1);
       root.style.setProperty("--stage-scale", String(scale));
     }
@@ -105,6 +106,30 @@ export default function DiaryApp() {
     }, 760);
   }
 
+  function showMobileRightPage() {
+    if (isTurning) return;
+    setMobilePage("right");
+  }
+
+  function handleMobilePrev() {
+    if (isTurning) return;
+
+    if (pageIndex > 0) {
+      setPageIndex((prev) => Math.max(0, prev - 1));
+      return;
+    }
+
+    setMobilePage("left");
+  }
+
+  function handleMobileNext() {
+    if (isTurning) return;
+
+    if (pageIndex < totalPages - 1) {
+      setPageIndex((prev) => Math.min(totalPages - 1, prev + 1));
+    }
+  }
+
   async function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
     setSubmitMessage("");
@@ -153,7 +178,7 @@ export default function DiaryApp() {
   }
 
   return (
-    <main className="site-shell">
+    <main className={`site-shell mobile-${mobilePage}-page`}>
       <div className="photo-background" />
 
       <div className="desk-decor" aria-hidden="true">
@@ -168,7 +193,7 @@ export default function DiaryApp() {
         <div className="hub-container">
           <section className="diary-stage">
             <div className="diary-book-shadow" />
-            <div className={`diary-book ${isTurning ? "book-is-turning" : ""}`}>
+            <div className={`diary-book mobile-one-page-book ${isTurning ? "book-is-turning" : ""}`}>
               <div className="binding-spine" aria-hidden="true" />
 
               <div className="diary-page diary-page-left">
@@ -239,6 +264,15 @@ export default function DiaryApp() {
                     {submitting ? "저장중..." : "편지 남기기"}
                   </button>
                 </form>
+
+                <button
+                  type="button"
+                  className="page-turn-trigger next mobile-left-next"
+                  onClick={showMobileRightPage}
+                  aria-label="편지 리스트 페이지"
+                >
+                  <span>{COPY.nextLabel}</span>
+                </button>
               </div>
 
               <div
@@ -312,9 +346,9 @@ export default function DiaryApp() {
                 <button
                   type="button"
                   className="page-turn-trigger prev"
-                  onClick={() => turnPage("prev")}
+                  onClick={() => (mobilePage === "right" ? handleMobilePrev() : turnPage("prev"))}
                   aria-label="이전 페이지"
-                  disabled={pageIndex === 0 || isTurning}
+                  disabled={mobilePage === "right" ? isTurning : pageIndex === 0 || isTurning}
                 >
                   <span>{COPY.prevLabel}</span>
                 </button>
@@ -322,7 +356,7 @@ export default function DiaryApp() {
                 <button
                   type="button"
                   className="page-turn-trigger next"
-                  onClick={() => turnPage("next")}
+                  onClick={() => (mobilePage === "right" ? handleMobileNext() : turnPage("next"))}
                   aria-label="다음 페이지"
                   disabled={pageIndex >= totalPages - 1 || isTurning}
                 >
