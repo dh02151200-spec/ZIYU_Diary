@@ -122,13 +122,13 @@ url("/images/background/star-sky.png") center center / 1600px auto no-repeat;  p
 
  @media (max-width: 900px) {
 
-  .decor-rabbit { width:140px; right:40px; top:40px; }
+  .decor-rabbit { width:140px; right:40px; top:0px; }
 
-  .decor-chichi { width:80px; left:40px; top:100px; }
+  .decor-chichi { width:80px; left:40px;  bottom:30px; }
 
-  .decor-puppy { width:90px; right:40px; bottom:120px; }
+  .decor-puppy { width:90px; right:40px; top:100px; }
 
-  .decor-cat { width:180px; left:20px; bottom:60px; }
+  .decor-cat { width:180px; left:20px; bottom:30px; }
 
 }
 }
@@ -903,12 +903,12 @@ url("/images/background/star-sky.png") center center / 1600px auto no-repeat;  p
 @media (max-width: 860px) {
   html,
   body {
-    min-height: 80svh;
+    min-height: 50svh;
     overflow-x: hidden;
   }
 
   .site-shell {
-    min-height: 100svh;
+    min-height: 80svh;
     height: auto;
     overflow-x: hidden;
     overflow-y: auto;
