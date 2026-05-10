@@ -1145,5 +1145,20 @@ url("/images/background/star-sky.png") center center / 1600px auto no-repeat;  p
     right: 60px !important;
     z-index: 35 !important;
   }
+  @media (max-width: 860px) {
+  .mobile-left-page .binding-spine {
+    top: 0 !important;
+    bottom: 0 !important;
+    height: 100% !important;
+    background-size: 100% 100% !important;
+  }
+
+  .mobile-right-page .binding-spine {
+    top: 0 !important;
+    bottom: 0 !important;
+    height: 100% !important;
+    background-size: 100% 100% !important;
+  }
+}
 }
 }
