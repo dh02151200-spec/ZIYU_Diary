@@ -1198,11 +1198,11 @@ url("/images/background/star-sky.png") center center / 1600px auto no-repeat;  p
 .mobile-left-page .binding-spine {
   display: block !important;
   position: absolute !important;
-  top: 0 !important;
+  top: -2px !important;
   right: 0 !important;
   width: 88px !important;
-  height: calc(100% + 2px) !important;
-  min-height: 1150px !important;
+  height: 1156px !important;
+  min-height: 1156px !important;
   z-index: 80 !important;
   background: url("/images/binding/real-ring-spine.svg") center top / 100% 100% no-repeat !important;
   pointer-events: none !important;
@@ -1219,16 +1219,15 @@ url("/images/background/star-sky.png") center center / 1600px auto no-repeat;  p
 .mobile-right-page .binding-spine {
   display: block !important;
   position: absolute !important;
-  top: 0 !important;
+  top: -2px !important;
   left: 0 !important;
   width: 88px !important;
-  height: calc(100% + 2px) !important;
-  min-height: 1150px !important;
+  height: 1156px !important;
+  min-height: 1156px !important;
   z-index: 80 !important;
   background: url("/images/binding/real-ring-spine.svg") center top / 100% 100% no-repeat !important;
   pointer-events: none !important;
 }
-
   /* 오른쪽 페이지에서는 왼쪽용 GIF 숨김 */
   .mobile-right-page .sticker-ziyu_bar {
     display: none !important;
