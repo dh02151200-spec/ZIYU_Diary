@@ -76,7 +76,7 @@ url("/images/background/star-sky.png") center center / 1600px auto no-repeat;  p
   .photo-background {
     background:
       linear-gradient(rgba(255,255,255,0.04), rgba(255,255,255,0.14)),
-      url("/images/background/star-sky.png") center center / 900px auto no-repeat;
+      url("/images/background/star-sky.png") center top / cover no-repeat !important;
   }
 }
 
@@ -1019,20 +1019,4 @@ url("/images/background/star-sky.png") center center / 1600px auto no-repeat;  p
   display: none;
 }
 
-@media (max-width: 860px) {
-  .mobile-left-page .sticker-ziyu-bar-mobile {
-    display: block !important;
-    width: 86% !important;
-    left: 7% !important;
-    right: auto !important;
-    bottom: 48px !important;
-    top: auto !important;
-    z-index: 20 !important;
-    border-radius: 14px;
-  }
-
-  .mobile-right-page .sticker-ziyu-bar-mobile {
-    display: none !important;
-  }
-}
 }
