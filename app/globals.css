@@ -115,10 +115,7 @@ url("/images/background/star-sky.png") center center / 1600px auto no-repeat;  p
   .decor-chichi,
   .decor-puppy,
   .decor-cat,
-  .decor-paperclip {
-    opacity: 1 !important;
-    filter: none !important;
-  }
+
 
   .decor-rabbit { width:140px; right:40px; top:0px; }
   .decor-chichi { width:80px; left:60px; bottom:10px; }
