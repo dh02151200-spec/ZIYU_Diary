@@ -1411,7 +1411,7 @@ url("/images/background/star-sky.png") center center / 1600px auto no-repeat;  p
   @media (max-width: 860px) {
   .mobile-right-page .binding-spine {
     display: block !important;
-    left: 0 !important;
+    left: 8 !important;
     right: auto !important;
     width: 118px !important;
     z-index: 120 !important;
