@@ -974,6 +974,18 @@ url("/images/background/star-sky.png") center center / 1600px auto no-repeat;  p
   .mobile-right-page .diary-page-left {
     display: none !important;
   }
+    /* 모바일 왼쪽 페이지 카드 폭 GIF 기준으로 맞춤 */
+  .mobile-left-page .today-card,
+  .mobile-left-page .guide-card,
+  .mobile-left-page .write-card,
+  .mobile-left-page .today-box,
+  .mobile-left-page .guide-box,
+  .mobile-left-page .write-box {
+    width: 520px !important;
+    max-width: 520px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
 
  @media (max-width: 860px) {
   .diary-book.mobile-one-page-book {
