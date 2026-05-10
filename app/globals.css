@@ -1396,7 +1396,7 @@ url("/images/background/star-sky.png") center center / 1600px auto no-repeat;  p
 
 @media (max-width: 860px) {
   .mobile-right-page .hub-container {
-    transform: translateX(-68px) scale(var(--stage-scale)) !important;
+    transform: translateX(-35px) scale(var(--stage-scale)) !important;
   }
 }
 }
