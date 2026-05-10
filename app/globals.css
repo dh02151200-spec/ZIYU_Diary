@@ -896,27 +896,46 @@ url("/images/background/star-sky.png") center center / 1600px auto no-repeat;  p
 @media (max-width: 860px) {
   html,
   body {
-    min-height: 100svh;
-    overflow-x: hidden;
+    width: 100%;
+    height: 100%;
+    overflow: hidden !important;
   }
 
   .site-shell {
-    min-height: 100svh;
-    height: auto;
-    overflow-x: hidden;
-    overflow-y: auto;
-    touch-action: pan-y pinch-zoom;
-    padding: 34px 18px 74px;
+    width: 100vw;
+    height: 100dvh !important;
+    min-height: 100dvh !important;
+    overflow: hidden !important;
+    padding: 0 !important;
+    position: relative;
+  }
+
+  .photo-background {
+    position: fixed !important;
+    inset: 0 !important;
+    width: 100vw;
+    height: 100dvh;
+    overflow: hidden;
+  }
+
+  .desk-decor {
+    position: fixed !important;
+    inset: 0 !important;
+    width: 100vw;
+    height: 100dvh;
+    overflow: visible;
   }
 
   .hub-shell {
-    width: 100%;
-    min-height: 100svh;
-    height: auto;
-    overflow: visible;
-    align-items: flex-start;
+    width: 100vw;
+    height: 100dvh !important;
+    min-height: 100dvh !important;
+    overflow: visible !important;
+    display: flex;
     justify-content: center;
+    align-items: center;
   }
+
 
   .hub-container,
   .diary-stage {
