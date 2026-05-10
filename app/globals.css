@@ -1060,4 +1060,90 @@ url("/images/background/star-sky.png") center center / 1600px auto no-repeat;  p
   display: none !important;
 }
 }
+/* 모바일 최종 보정: 링/페이지넘김/GIF/물고기 스티커 */
+@media (max-width: 860px) {
+  .diary-book.mobile-one-page-book {
+    width: 760px !important;
+    height: 1080px !important;
+    padding: 0 !important;
+    overflow: hidden !important;
+    background:
+      linear-gradient(90deg, rgba(119,83,59,0.1), transparent 9%, transparent 92%, rgba(119,83,59,0.08)),
+      url("/images/paper/page-texture.png") center / cover no-repeat !important;
+  }
+
+  .diary-book.mobile-one-page-book .diary-page {
+    width: 674px !important;
+    height: 1080px !important;
+  }
+
+  .mobile-left-page .diary-page-left {
+    margin-left: 0 !important;
+    margin-right: 86px !important;
+    padding-right: 54px !important;
+    background:
+      linear-gradient(90deg, rgba(119,83,59,0.1), transparent 9%, transparent 92%, rgba(119,83,59,0.08)),
+      url("/images/paper/page-texture.png") center / cover no-repeat !important;
+    box-shadow: none !important;
+  }
+
+  .mobile-left-page .binding-spine {
+    display: block !important;
+    position: absolute !important;
+    top: 0 !important;
+    bottom: 0 !important;
+    left: auto !important;
+    right: -1px !important;
+    width: 88px !important;
+    height: 1080px !important;
+    transform: none !important;
+    z-index: 80 !important;
+    background: url("/images/binding/real-ring-spine.svg") center / 100% 100% no-repeat !important;
+    filter: none !important;
+    pointer-events: none !important;
+  }
+
+  .mobile-left-page .page-turn-trigger.next,
+  .mobile-left-page .mobile-left-next {
+    display: block !important;
+    position: absolute !important;
+    right: 6px !important;
+    bottom: 4px !important;
+    width: 120px !important;
+    height: 86px !important;
+    z-index: 120 !important;
+    color: rgba(32,32,32,0.55) !important;
+  }
+
+  .mobile-left-page .page-turn-trigger.next span,
+  .mobile-left-page .mobile-left-next span {
+    display: block !important;
+    right: 18px !important;
+    bottom: 14px !important;
+  }
+
+  .mobile-left-page .sticker-ziyu_bar {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    width: 520px !important;
+    left: 50% !important;
+    right: auto !important;
+    bottom: 42px !important;
+    top: auto !important;
+    transform: translateX(-50%) !important;
+    z-index: 30 !important;
+  }
+
+  .mobile-right-page .sticker-ziyu_bar {
+    display: none !important;
+  }
+
+  .mobile-left-page .sticker-draw_fish {
+    width: 72px !important;
+    top: 72px !important;
+    right: 92px !important;
+    z-index: 35 !important;
+  }
+}
 }
