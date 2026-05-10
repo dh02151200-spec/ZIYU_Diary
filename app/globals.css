@@ -1340,10 +1340,10 @@ url("/images/background/star-sky.png") center center / 1600px auto no-repeat;  p
 @media (max-width: 860px) {
   .mobile-left-page .binding-spine,
   .mobile-right-page .binding-spine {
-    top: -70px !important;
+    top: -90px !important;
     bottom: auto !important;
-    height: calc(100% + 140px) !important;
-    min-height: 1290px !important;
+    height: calc(100% + 180px) !important;
+    min-height: 1330px !important;
     background-size: 100% 100% !important;
     background-position: center center !important;
   }
