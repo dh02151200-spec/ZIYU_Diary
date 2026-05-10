@@ -1335,6 +1335,29 @@ url("/images/background/star-sky.png") center center / 1600px auto no-repeat;  p
     right: 60px !important;
     z-index: 35 !important;
   }
+
+  /* 모바일 링 세로 길이 최종 보정 */
+@media (max-width: 860px) {
+  .mobile-left-page .binding-spine,
+  .mobile-right-page .binding-spine {
+    top: -70px !important;
+    bottom: auto !important;
+    height: calc(100% + 140px) !important;
+    min-height: 1290px !important;
+    background-size: 100% 100% !important;
+    background-position: center center !important;
+  }
+
+  .mobile-left-page .binding-spine {
+    right: 0 !important;
+    left: auto !important;
+  }
+
+  .mobile-right-page .binding-spine {
+    left: 0 !important;
+    right: auto !important;
+  }
+}
 }
 
 
