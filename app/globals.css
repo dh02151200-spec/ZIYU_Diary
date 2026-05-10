@@ -978,14 +978,14 @@ url("/images/background/star-sky.png") center center / 1600px auto no-repeat;  p
  @media (max-width: 860px) {
   .diary-book.mobile-one-page-book {
     width: 760px !important;
-    height: 1080px !important;
+    height: 1150px !important;
     padding: 0 !important;
     overflow: hidden !important;
   }
 
   .diary-book.mobile-one-page-book .diary-page {
     width: 674px !important;
-    height: 1080px !important;
+    height: 1150px !important;
   }
 
   /* 왼쪽 페이지: 종이 왼쪽 / 링 오른쪽 */
@@ -1004,7 +1004,7 @@ url("/images/background/star-sky.png") center center / 1600px auto no-repeat;  p
     left: auto !important;
     right: 0 !important;
     width: 86px !important;
-    height: 1080px !important;
+    height:1150px !important;
     transform: none !important;
     z-index: 60 !important;
     background: url("/images/binding/real-ring-spine.svg") center / 100% 100% no-repeat !important;
@@ -1027,7 +1027,7 @@ url("/images/background/star-sky.png") center center / 1600px auto no-repeat;  p
     left: 0 !important;
     right: auto !important;
     width: 86px !important;
-    height: 1080px !important;
+    height: 1150px !important;
     transform: none !important;
     z-index: 60 !important;
     background: url("/images/binding/real-ring-spine.svg") center / 100% 100% no-repeat !important;
@@ -1042,7 +1042,7 @@ url("/images/background/star-sky.png") center center / 1600px auto no-repeat;  p
   /* 왼쪽 페이지에서만 GIF 표시 */
   .mobile-left-page .sticker-ziyu_bar {
     display: block !important;
-    width: 520px !important;
+    width: 760px !important;
     left: 50% !important;
     right: auto !important;
     bottom: 42px !important;
@@ -1064,7 +1064,7 @@ url("/images/background/star-sky.png") center center / 1600px auto no-repeat;  p
 @media (max-width: 860px) {
   .diary-book.mobile-one-page-book {
     width: 760px !important;
-    height: 1200px !important;
+    height: 1150px !important;
     padding: 0 !important;
     overflow: hidden !important;
     background:
@@ -1074,7 +1074,7 @@ url("/images/background/star-sky.png") center center / 1600px auto no-repeat;  p
 
   .diary-book.mobile-one-page-book .diary-page {
     width: 674px !important;
-    height: 1200px !important;
+    height: 1150px !important;
   }
 
   .mobile-left-page .diary-page-left {
@@ -1095,7 +1095,7 @@ url("/images/background/star-sky.png") center center / 1600px auto no-repeat;  p
     left: auto !important;
     right: 0px !important;
     width: 88px !important;
-    height: 1200px !important;
+    height: 1150px !important;
     transform: none !important;
     z-index: 80 !important;
     background: url("/images/binding/real-ring-spine.svg") center / 100% 100% no-repeat !important;
@@ -1126,7 +1126,7 @@ url("/images/background/star-sky.png") center center / 1600px auto no-repeat;  p
     display: block !important;
     visibility: visible !important;
     opacity: 1 !important;
-    width: 520px !important;
+    width: 760px !important;
     left: 50% !important;
     right: auto !important;
     bottom: 42px !important;
