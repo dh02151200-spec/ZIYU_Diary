@@ -1394,7 +1394,7 @@ url("/images/background/star-sky.png") center center / 1600px auto no-repeat;  p
 
   .mobile-right-page .diary-book.mobile-one-page-book {
     background:
-      url("/images/binding/real-ring-spine-mobile.png") 0 0 /40px 1150px no-repeat,
+      url("/images/binding/real-ring-spine-mobile.png") 0 0 /75px 1330px no-repeat,
       linear-gradient(90deg, rgba(119,83,59,0.1), transparent 9%, transparent 92%, rgba(119,83,59,0.08)),
       url("/images/paper/page-texture.png") center / cover no-repeat !important;
   }
