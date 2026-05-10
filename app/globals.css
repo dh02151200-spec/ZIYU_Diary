@@ -1371,4 +1371,29 @@ url("/images/background/star-sky.png") center center / 1600px auto no-repeat;  p
     margin-left: auto !important;
     margin-right: auto !important;
   }
+
+  @media (max-width: 860px) {
+  .mobile-right-page .binding-spine {
+    left: -6px !important;
+    right: auto !important;
+    width: 96px !important;
+    background-size: 100% 100% !important;
+  }
+
+  .mobile-right-page .diary-page-right {
+    margin-left: 76px !important;
+    padding-left: 44px !important;
+  }
+}
+@media (max-width: 860px) {
+  /* 왼쪽 페이지일 때: 다이어리 전체를 오른쪽에 붙임 */
+  .mobile-left-page .hub-container {
+    transform: translateX(22px) !important;
+  }
+
+  /* 오른쪽 페이지일 때: 다이어리 전체를 왼쪽에 붙임 */
+  .mobile-right-page .hub-container {
+    transform: translateX(-22px) !important;
+  }
+}
 }
