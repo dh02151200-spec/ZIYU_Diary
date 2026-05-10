@@ -116,12 +116,30 @@ url("/images/background/star-sky.png") center center / 1600px auto no-repeat;  p
   .decor-puppy,
   .decor-cat,
 
-
+.mobile-left-page .diary-page-left {
+  overflow: visible !important;
+}
   .decor-rabbit { width:140px; right:40px; top:0px; }
   .decor-chichi { width:80px; left:60px; bottom:10px; }
   .decor-puppy { width:90px; right:40px; top:100px; }
   .decor-cat { width:120px; left:20px; bottom:0px; }
+  .sticker-ziyu_bar {
+  display: block !important;
+  position: absolute !important;
+  width: 520px !important;
+
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+
+  bottom: 42px !important;
+  z-index: 20 !important;
+
+  opacity: 1 !important;
+  visibility: visible !important;
+  pointer-events: none !important;
 }
+}
+
 
 .hub-shell {
   position: relative;
