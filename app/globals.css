@@ -1016,5 +1016,8 @@ url("/images/background/star-sky.png") center center / 1600px auto no-repeat;  p
     border-bottom-right-radius: 20px !important;
     background: linear-gradient(135deg, transparent 35%, rgba(120,89,64,0.14)) !important;
   }
+  .mobile-left-page .tape-title {
+  display: none !important;
+}
 }
 }
