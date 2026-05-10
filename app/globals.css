@@ -1017,7 +1017,7 @@ url("/images/background/star-sky.png") center center / 1600px auto no-repeat;  p
   height: 1156px !important;
   min-height: 1156px !important;
   z-index: 80 !important;
-  background: url("/images/binding/real-ring-spine.svg") center top / 100% 100% no-repeat !important;
+  background: url("/images/binding/real-ring-spine-mobile.png") center top / 100% 100% no-repeat !important;
   pointer-events: none !important;
 }
   }
@@ -1039,7 +1039,7 @@ url("/images/background/star-sky.png") center center / 1600px auto no-repeat;  p
   height: 1156px !important;
   min-height: 1156px !important;
   z-index: 80 !important;
-  background: url("/images/binding/real-ring-spine.svg") center top / 100% 100% no-repeat !important;
+  background: url("/images/binding/real-ring-spine-mobile.png") center top / 100% 100% no-repeat !important;
   pointer-events: none !important;
 }
   /* 오른쪽 페이지에서는 왼쪽용 GIF 숨김 */
@@ -1106,7 +1106,7 @@ url("/images/background/star-sky.png") center center / 1600px auto no-repeat;  p
     height: 1150px !important;
     transform: none !important;
     z-index: 80 !important;
-    background: url("/images/binding/real-ring-spine.svg") center / 100% 100% no-repeat !important;
+    background: url("/images/binding/real-ring-spine-mobile.png") center / 100% 100% no-repeat !important;
     filter: none !important;
     pointer-events: none !important;
   }
@@ -1200,7 +1200,7 @@ url("/images/background/star-sky.png") center center / 1600px auto no-repeat;  p
   height: 1156px !important;
   min-height: 1156px !important;
   z-index: 80 !important;
-  background: url("/images/binding/real-ring-spine.svg") center top / 100% 100% no-repeat !important;
+  background: url("/images/binding/real-ring-spine-mobile.png") center top / 100% 100% no-repeat !important;
   pointer-events: none !important;
 }
 
@@ -1221,7 +1221,7 @@ url("/images/background/star-sky.png") center center / 1600px auto no-repeat;  p
   height: 1156px !important;
   min-height: 1156px !important;
   z-index: 80 !important;
-  background: url("/images/binding/real-ring-spine.svg") center top / 100% 100% no-repeat !important;
+  background: url("/images/binding/real-ring-spine-mobile.png") center top / 100% 100% no-repeat !important;
   pointer-events: none !important;
 }
   /* 오른쪽 페이지에서는 왼쪽용 GIF 숨김 */
@@ -1288,7 +1288,7 @@ url("/images/background/star-sky.png") center center / 1600px auto no-repeat;  p
     height: 1150px !important;
     transform: none !important;
     z-index: 80 !important;
-    background: url("/images/binding/real-ring-spine.svg") center / 100% 100% no-repeat !important;
+    background: url("/images/binding/real-ring-spine-mobile.png") center / 100% 100% no-repeat !important;
     filter: none !important;
     pointer-events: none !important;
   }
