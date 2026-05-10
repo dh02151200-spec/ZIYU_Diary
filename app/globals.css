@@ -1393,5 +1393,20 @@ url("/images/background/star-sky.png") center center / 1600px auto no-repeat;  p
   .mobile-right-page .hub-container {
     transform: translateX(-22px) scale(var(--stage-scale)) !important;
   }
+
+  @media (max-width: 860px) {
+  .mobile-right-page .hub-container {
+    transform: translateX(-68px) scale(0.85) !important;
+  }
+  @media (max-width: 860px) {
+  .mobile-right-page .binding-spine {
+    left: -18px !important;
+    width: 118px !important;
+    overflow: visible !important;
+    background-size: contain !important;
+    background-position: center center !important;
+  }
+}
+}
 }
 }
