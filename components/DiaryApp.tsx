@@ -203,6 +203,7 @@ export default function DiaryApp() {
                 <img src="/images/stickers/draw_fish.png" className="page-sticker sticker-draw_fish" alt="" />
                 <img src="/images/stickers/flower.svg" className="page-sticker sticker-flower-left" alt="" />
                 <img src="/images/stickers/tape-dot.svg" className="page-sticker tape tape-guide" alt="" />
+                <img src="/images/stickers/ziyu_fish_mobile.gif" className="page-sticker sticker-ziyu-bar-mobile" alt="" />
 
                 <div className="left-page-header">
                   <p className="eyebrow">{COPY.eyebrow}</p>
