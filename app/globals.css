@@ -1142,7 +1142,7 @@ url("/images/background/star-sky.png") center center / 1600px auto no-repeat;  p
   .mobile-left-page .sticker-draw_fish {
     width: 72px !important;
     top: 72px !important;
-    right: 92px !important;
+    right: 60px !important;
     z-index: 35 !important;
   }
 }
