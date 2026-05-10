@@ -1377,13 +1377,26 @@ url("/images/background/star-sky.png") center center / 1600px auto no-repeat;  p
   .mobile-right-page .hub-container {
     transform: translateX(-35px) scale(var(--stage-scale)) !important;
   }
-
-  .mobile-right-page .diary-book.mobile-one-page-book {
-    background:
-      url("/images/binding/real-ring-spine-mobile.png") -8px top / 88px 100% no-repeat,
-      linear-gradient(90deg, rgba(119,83,59,0.1), transparent 9%, transparent 92%, rgba(119,83,59,0.08)),
-      url("/images/paper/page-texture.png") center / cover no-repeat !important;
+@media (max-width: 860px) {
+  .mobile-right-page .binding-spine {
+    display: block !important;
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: auto !important;
+    width: 88px !important;
+    height: 1150px !important;
+    z-index: 120 !important;
+    background: url("/images/binding/real-ring-spine-mobile.png") center top / 88px 1150px no-repeat !important;
+    pointer-events: none !important;
+    filter: none !important;
   }
+
+  .mobile-right-page .diary-page-right {
+    margin-left: 86px !important;
+    padding-left: 44px !important;
+  }
+}
 
   .mobile-right-page .binding-spine {
     display: none !important;
