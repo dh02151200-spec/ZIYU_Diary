@@ -1042,7 +1042,7 @@ url("/images/background/star-sky.png") center center / 1600px auto no-repeat;  p
   /* 왼쪽 페이지에서만 GIF 표시 */
   .mobile-left-page .sticker-ziyu_bar {
     display: block !important;
-    width: 760px !important;
+    width: 520px !important;
     left: 50% !important;
     right: auto !important;
     bottom: 42px !important;
@@ -1126,7 +1126,7 @@ url("/images/background/star-sky.png") center center / 1600px auto no-repeat;  p
     display: block !important;
     visibility: visible !important;
     opacity: 1 !important;
-    width: 760px !important;
+    width: 520px !important;
     left: 50% !important;
     right: auto !important;
     bottom: 42px !important;
